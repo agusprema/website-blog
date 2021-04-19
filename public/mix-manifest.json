@@ -1,0 +1,9 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/icon.js": "/js/icon.js",
+    "/js/vmenu.js": "/js/vmenu.js",
+    "/vendor/livewire-editorjs/editorjs.js": "/vendor/livewire-editorjs/editorjs.js",
+    "/css/app.css": "/css/app.css",
+    "/css/icon.css": "/css/icon.css",
+    "/css/content.css": "/css/content.css"
+}
