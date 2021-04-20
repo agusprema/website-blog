@@ -7,7 +7,7 @@
 <x-layouts.admin-layout>
     <div x-data="{trash: false}">
         <div class="flex items-center">
-            <h1 class="text-3xl text-fifthly pb-1 flex flex-grow">Menu Management</h1>
+            <x-admins.title-content>Activity Log</x-admins.title-content>
         </div>
 
         <div class="w-full mt-2" x-show="trash == false">

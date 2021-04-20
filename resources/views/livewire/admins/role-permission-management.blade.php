@@ -43,7 +43,7 @@
 
 <div x-data="{OpenAction: false}">
     <div class="flex items-center">
-        <h1 class="text-3xl text-fifthly pb-1 flex flex-grow">Role Management</h1>
+        <x-admins.title-content>Role Management</x-admins.title-content>
         <div class="mr-2">
             <x-icons.cog wire:loading class="h-12 w-12 animate-spin text-gray-400" />
         </div>

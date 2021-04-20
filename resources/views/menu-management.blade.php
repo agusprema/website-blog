@@ -4,7 +4,7 @@
 <x-layouts.admin-layout>
     <div>
         <div class="flex items-center">
-            <h1 class="text-3xl text-fifthly pb-1 flex flex-grow">Menu Management</h1>
+            <x-admins.title-content>Menu Management</x-admins.title-content>
             <x-modals.trash-button />
             <livewire:modals.menus />
         </div>
