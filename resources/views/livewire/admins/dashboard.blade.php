@@ -151,7 +151,7 @@
     </script>
 @endpush
 
-<x-layouts.admin-layout>
+<div>
     <h1 class="text-3xl text-black pb-6">Dashboard</h1>
 
     <div class="grid grid-cols-4 grid-rows-3 auto-cols-auto gap-4">
@@ -267,4 +267,4 @@
         </div>
 
     </div>
-</x-layouts.admin-layout>
+</div>

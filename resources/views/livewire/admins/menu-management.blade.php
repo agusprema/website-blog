@@ -1,4 +1,19 @@
-@push('script')
+@push('meta')
+    <title>Menu Management | {{ config('app.name', 'Laravel') }}</title>
+@endpush
+<div>
+    <div class="flex items-center">
+        <x-admins.title-content>Menu Management</x-admins.title-content>
+        <x-modals.trash-button />
+        <livewire:modals.menus />
+    </div>
+
+    <div class="w-full mt-2">
+        <livewire:datatable.menu-management />
+    </div>
+</div>
+
+{{-- @push('script')
     <script src="{{ mix('js/vmenu.js') }}"></script>
 @endpush
 <div>
@@ -54,4 +69,4 @@
             </li>
         @endforeach
     </ol>
-</div>
+</div> --}}

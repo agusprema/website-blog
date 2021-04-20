@@ -22,7 +22,7 @@ class MenuManagement extends Component
 
     public function render()
     {
-        return view('livewire.admins.menu-management');
+        return view('livewire.admins.menu-management')->layout('layouts.admin');
     }
 
     public function updateMenuOrder($menus)

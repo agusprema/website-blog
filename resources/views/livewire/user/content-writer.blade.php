@@ -1,5 +1,5 @@
 @push('meta')
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Create Article | {{ config('app.name', 'Laravel') }}</title>
 @endpush
 @push('script')
     @livewireEditorjsScripts
