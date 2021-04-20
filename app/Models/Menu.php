@@ -29,7 +29,7 @@ class Menu extends Model
 
     public function getDescriptionForEvent(string $eventName): string
     {
-        return "User " . request()->user()->email . " has been {$eventName} Menu";
+        return "Menu has been {$eventName} Menu";
     }
 
     public static function Role($role)

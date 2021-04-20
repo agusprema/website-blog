@@ -3801,6 +3801,7 @@ module.exports = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var universal_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! universal-cookie */ "./node_modules/universal-cookie/es6/index.js");
+/* provided dependency */ var process = __webpack_require__(/*! process/browser */ "./node_modules/process/browser.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
@@ -3822,7 +3823,7 @@ var SwitchTheme = document.querySelectorAll("#switchtheme");
 
 (function () {
   if (!cookies.get("theme")) {
-     true ? window.matchMedia("(prefers-color-scheme: dark)").matches ? ChangeTheme("dark") : ChangeTheme("light") : 0;
+    process.env.MIX_THEME_MEDIA ? window.matchMedia("(prefers-color-scheme: dark)").matches ? ChangeTheme("dark") : ChangeTheme("light") : ChangeTheme("light");
   }
 })();
 

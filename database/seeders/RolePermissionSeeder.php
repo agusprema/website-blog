@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
+use App\Models\User;
 
 class RolePermissionSeeder extends Seeder
 {
@@ -15,7 +16,14 @@ class RolePermissionSeeder extends Seeder
      */
     public function run()
     {
+        $user_admin = User::create([
+            'name' => 'agusprema',
+            'email' => 'agusprema@gmail.com',
+            'password' => '$2y$10$x0sBS74Fs8iJWiEqv2oErOVFfHg9CrlP985AYsuXRGPOpkyFyyQ.W',
+            'email_verified_at' => now()
+        ]);
         $admin = Role::create(['name' => 'Admin']);
+        $user_admin->assignRole('Admin');
         $guest = Role::create(['name' => 'Guest']);
         $writer = Role::create(['name' => 'Writer']);
         $access_all = Permission::create(['name' => 'Access All']);
