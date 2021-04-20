@@ -108,7 +108,13 @@
                 @endforeach
             </div>
         </div>
-        <div class="col-span-9">
+        <div class="col-span-9 relative">
+            <div wire:loading.class.remove="hidden" wire:target="ChangePermission" class="hidden absolute top-0 left-0 flex items-center justify-center w-full h-full z-50 bg-gray-900 bg-opacity-50">
+                <div class="flex flex-col items-center justify-center">
+                    <i class="fas fa-spinner fa-pulse text-5xl text-primary"></i>
+                    <div class="">Loading</div>
+                </div>
+            </div>
             <div class="table w-full">
                 <div class="table-row divide-x divide-gray-200">
                     <div class="table-cell h-12 overflow-hidden align-top">
